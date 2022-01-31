@@ -5,27 +5,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="./../../resources/styles/style.css">
-    <link rel="stylesheet" href="./../../resources/styles/newtrade.css">
+    <link rel="stylesheet" href="./../../resources/styles/style.css" />
+    <link rel="stylesheet" href="./../../resources/styles/newtrade.css" />
     <script src="./../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link
       rel="stylesheet"
       href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./../../resources/styles/modified_bootstrap.css">
+    <link
+      rel="stylesheet"
+      href="./../../resources/styles/modified_bootstrap.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./../../resources/drawable/favicon.ico"
+    />
   </head>
-  <body class="">
+  <body>
     <header>
       <div class="bg-primary">
         <nav>
           <div class="container-fluid">
             <div class="row px-2">
               <div class="col-lg-8 col-12 pt-3">
-                <a href="./index.html"><img class="clickable" src="./../../resources/drawable/home.svg" alt="home icon"></a>
+                <a href="./index.html"
+                  ><img
+                    class="clickable"
+                    src="./../../resources/drawable/home.svg"
+                    alt="home icon"
+                /></a>
               </div>
-              <div class="col-lg-4 col-12 text-end py-3 px-1 justify-space-between">
-                <a href="./newTrade.html" class="btn btn-secondary active btn-sm mx-1">Start Trading!</a>
+              <div
+                class="col-lg-4 col-12 text-end py-3 px-1 justify-space-between"
+              >
+                <a
+                  href="./newTrade.html"
+                  class="btn btn-secondary active btn-sm mx-1"
+                  >Start Trading!</a
+                >
                 <button class="btn btn-primary btn-sm mx-1">Login</button>
                 <button class="btn btn-primary btn-sm mx-1">Sign up</button>
               </div>
@@ -47,46 +66,77 @@
     <main>
       <div class="container p-3">
         <form class="card card-secondary p-3" action="trades.html">
-            <div class="row mb-3">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-9 col-md-12">
-                    <h3 class="text-yellow font-raleway-heavy">New Trade</h3>
-                </div>
+          <div class="row mb-3">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-9 col-md-12">
+              <h3 class="text-yellow font-raleway-heavy">New Trade</h3>
             </div>
-            <div class="form-group row mb-3">
-                <div class="col-1"></div>
-                <label class="col-lg-2 col-sm-12 col-form-label" for="inputCategory">Category</label>
-                <div class="col-lg-8 col-sm-12">
-                    <input class="form-control" type="text" name="category" placeholder="Category" id="inputCategory">
-                </div>
+          </div>
+          <div class="form-group row mb-3">
+            <div class="col-1"></div>
+            <label class="col-lg-2 col-sm-12 col-form-label" for="inputCategory"
+              >Category</label
+            >
+            <div class="col-lg-8 col-sm-12">
+              <input
+                class="form-control"
+                type="text"
+                name="category"
+                placeholder="Category"
+                id="inputCategory"
+              />
             </div>
-            <div class="form-group row mb-3">
-                <div class="col-lg-1 col-md-0"></div>
-                <label class="col-lg-2 col-sm-12 col-form-label" for="inputTitle">Title</label>
-                <div class="col-lg-8 col-sm-12">
-                    <input class="form-control" type="text" name="title" placeholder="Title" id="inputTitle">
-                </div>
+          </div>
+          <div class="form-group row mb-3">
+            <div class="col-lg-1 col-md-0"></div>
+            <label class="col-lg-2 col-sm-12 col-form-label" for="inputTitle"
+              >Title</label
+            >
+            <div class="col-lg-8 col-sm-12">
+              <input
+                class="form-control"
+                type="text"
+                name="title"
+                placeholder="Title"
+                id="inputTitle"
+              />
             </div>
-            <div class="form-group row mb-3">
-                <div class="col-lg-1 col-md-0"></div>
-                <label class="col-lg-2 col-sm-12 col-form-label" for="inputAuthor">Author</label>
-                <div class="col-lg-8 col-sm-12">
-                    <input class="form-control" type="text" name="author" placeholder="Author" id="inputAuthor">
-                </div>
+          </div>
+          <div class="form-group row mb-3">
+            <div class="col-lg-1 col-md-0"></div>
+            <label class="col-lg-2 col-sm-12 col-form-label" for="inputAuthor"
+              >Author</label
+            >
+            <div class="col-lg-8 col-sm-12">
+              <input
+                class="form-control"
+                type="text"
+                name="author"
+                placeholder="Author"
+                id="inputAuthor"
+              />
             </div>
-            <div class="form-group row mb-3">
-                <div class="col-lg-1 col-md-0"></div>
-                <label class="col-lg-2 col-sm-12 col-form-label" for="inputDetails">Details</label>
-                <div class="col-lg-8 col-sm-12">
-                    <textarea class="form-control h-120px" name="details" placeholder="Description" id="inputDetails"></textarea>
-                </div>
+          </div>
+          <div class="form-group row mb-3">
+            <div class="col-lg-1 col-md-0"></div>
+            <label class="col-lg-2 col-sm-12 col-form-label" for="inputDetails"
+              >Details</label
+            >
+            <div class="col-lg-8 col-sm-12">
+              <textarea
+                class="form-control h-120px"
+                name="details"
+                placeholder="Description"
+                id="inputDetails"
+              ></textarea>
             </div>
-            <div class="form-group row mb-3">
-                <div class="col-lg-2 col-md-0"></div>
-                <div class="col-lg-9 col-md-12 d-flex justify-content-end">
-                <button type="submit" class="btn btn-success">Submit</button>
-                </div>
+          </div>
+          <div class="form-group row mb-3">
+            <div class="col-lg-2 col-md-0"></div>
+            <div class="col-lg-9 col-md-12 d-flex justify-content-end">
+              <button type="submit" class="btn btn-success">Submit</button>
             </div>
+          </div>
         </form>
       </div>
     </main>
@@ -96,8 +146,12 @@
           <div class="col d-flex py-3 px-1 text-yellow">
             <span>&copy; Miller's Market</span>
             <span class="px-3 mx-3">
-              <span class="px-1 mx-1"><a href="./index.html" class="text-yellow">ABOUT</a></span>
-              <span class="px-1 mx-1"><a href="./index.html" class="text-yellow">CONTACT</a></span>
+              <span class="px-1 mx-1"
+                ><a href="./index.html" class="text-yellow">ABOUT</a></span
+              >
+              <span class="px-1 mx-1"
+                ><a href="./index.html" class="text-yellow">CONTACT</a></span
+              >
             </span>
           </div>
         </div>
