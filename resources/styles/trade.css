@@ -7,3 +7,14 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+.bd-center {
+    display: flex; 
+    flex-direction:column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.border-white {
+    border: 1px solid white;
+}
