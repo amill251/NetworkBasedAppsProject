@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trading App Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./../../resources/styles/style.css" />
+    <link rel="stylesheet" href="./../../resources/styles/trade.css" />
+    <script src="./../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./../../resources/styles/modified_bootstrap.css"
+    />
+  </head>
+  <body class="">
+    <header>
+      <div class="bg-primary">
+        <nav>
+          <div class="container-fluid">
+            <div class="row px-2">
+              <div class="col-lg-8 col-12 pt-3">
+                <a href="./index.html"
+                  ><img
+                    class="clickable"
+                    src="./../../resources/drawable/home.svg"
+                    alt="home icon"
+                /></a>
+              </div>
+              <div
+                class="col-lg-4 col-12 text-end py-3 px-1 justify-space-between"
+              >
+                <a href="./newTrade.html"><button class="btn btn-secondary btn-sm mx-1">Start Trading!</button></a>
+                <button class="btn btn-primary btn-sm mx-1">Login</button>
+                <button class="btn btn-primary btn-sm mx-1">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <hr class="bg-light mx-2 mt-0 mb-1" />
+        <nav>
+          <div class="container-fluid">
+            <div class="row px-2">
+              <div class="col-1 py-2 px-1">
+                <a href="./trades.html"
+                  ><button class="btn btn-secondary">Trades</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container pt-4 pb-3">
+        <div class="card bg-secondary text-yellow">
+          <div class="row px-5 py-3">
+            <div class="col-lg-2 col-md-4">
+              <div>
+                <img
+                  class="cow-img w-100"
+                  src="./../../resources/drawable/cow.jpg"
+                  alt="cow"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-8">
+              <div>
+                <h4>Cow</h4>
+                <p class="text-white">Robert Cowney Jr.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 pt-3 mt-3" style="border: 1px solid white; display: flex; flex-direction:column; justify-content: center; align-items: center;">
+              <div class="h-100">
+                <div>
+                  <h6>Are you interested in this cow?</h6>
+                </div>
+                <div class="p-3">
+                  <a href="./trades.html"
+                    ><button class="btn btn-primary mx-2">Trade It</button></a
+                  >
+                  <a href="./trades.html"><button class="btn btn-primary mx-2">Rate It</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row px-5 pb-3">
+            <div class="col-lg-8 col-md-12 pt-3" style="border: 1px solid white;">
+              <h2>Details</h2>
+              <p class="paragraph text-white">
+                Robert Cowney Jr. is a magnificent cow, weighing in at a
+                whopping 1849lbs. Robert was raised on freshly organic, vegan,
+                non-gmo, grass. Robert grazes on a mix of clover, orchardgrass,
+                and timothy hay, and drinks purified water from his very own
+                well. Seriously, though, Robert would be a great addition to any
+                farm and would make a great cow for beef or milk production. He
+                is gentle and easy to handle, and would be a perfect fit for
+                your operation. Robert is a great cow and a great friend. He is
+                always willing to help out and is always there for a good laugh.
+                He is an amazing cow and an amazing friend. If you are looking
+                for a cow that is both beautiful and useful, look no further
+                than Robert Cowney Jr! Contact us today to schedule a visit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bg-primary container-fluid">
+        <div class="row">
+          <div class="col d-flex py-3 px-1 text-yellow">
+            <span>&copy Miller's Market</span>
+            <span class="px-3 mx-3">
+              <span class="px-1 mx-1"
+                ><a href="./index.html" class="text-yellow">ABOUT</a></span
+              >
+              <span class="px-1 mx-1"
+                ><a href="./index.html" class="text-yellow">CONTACT</a></span
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+main {
+    min-height: calc(100vh - 163px - 56px);
+}
+
+.clickable:hover {
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.bg-primary {
+    background-color: #EB5063;
+}
+
+.text-yellow {
+    color: #FCF9AF;
+}
+
+.text-secondary {
+    color: #0B7596 !important;
+}
+
+.font-raleway-heavy {
+    font-family: Raleway-Black;
+}
+
+@font-face {
+    font-family: Raleway-Black;
+    src: url(./../fonts/raleway.heavy.ttf);
+  }

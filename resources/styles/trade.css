@@ -1,0 +1,9 @@
+.cow-img {
+    border-radius: .25rem !important;
+    box-shadow: 2px 2px 4px 0.25rem rgba(0,0,0,.15);
+}
+
+.paragraph {
+    text-align: justify;
+    text-justify: inter-word;
+}
