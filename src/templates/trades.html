@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Trading App Template</title>
+    <title>Miller's Market</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
@@ -25,7 +25,7 @@
                 <a href="./index.html"><img class="clickable" src="./../../resources/drawable/home.svg" alt="home icon"></a>
               </div>
               <div class="col-lg-4 col-12 text-end py-3 px-1 justify-space-between">
-                <a href="./newTrade.html"><button class="btn btn-secondary btn-sm mx-1">Start Trading!</button></a>
+                <a href="./newTrade.html" class="btn btn-secondary btn-sm mx-1">Start Trading!</a>
                 <button class="btn btn-primary btn-sm mx-1">Login</button>
                 <button class="btn btn-primary btn-sm mx-1">Sign up</button>
               </div>
@@ -37,7 +37,7 @@
           <div class="container-fluid">
             <div class="row px-2">
               <div class="col-1 py-2 px-1">
-                <button class="btn btn-secondary active">Trades</button>
+                <a href="./trades.html" class="btn btn-secondary active">Trades</a>
               </div>
             </div>
           </div>
@@ -45,25 +45,21 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="p-5 m-5 h-100">
-              <h2>Livestock</h2>
-                <ul>
-                    <a href="trade.html"><li>Cows</li></a>
-                    <a href="trade.html"><li>Pigs</li></a>
-                    <a href="trade.html"><li>Chickens</li></a>
-                </ul>
-                <h2>Raw meat and Eggs</h2>
-                <ul>
-                    <a href="trade.html"><li>Beef</li></a>
-                    <a href="trade.html"><li>Pork</li></a>
-                    <a href="trade.html"><li>Chicken</li></a>
-                    <a href="trade.html"><li>Eggs</li></a>
-                </ul>
-            </div>
-          </div>
+      <div class="container py-3">
+        <div class="row trades-card bg-secondary p-3">
+            <div class="col-lg-6 col-sm-12 d-flex flex-column mb-3">
+                <h2 class="text-yellow font-raleway-heavy">Livestock</h2>
+                <a class="btn btn-primary my-1" href="trade.html">Cows</a>
+                <a class="btn btn-primary my-1" href="trade.html">Pigs</a>
+                <a class="btn btn-primary my-1" href="trade.html">Chickens</a>
+              </div>
+                <div class="col-lg-6 col-sm-12 d-flex flex-column">
+                    <h2 class="text-yellow font-raleway-heavy">Raw meat and Eggs</h2>
+                    <a class="btn btn-primary my-1" href="trade.html">Beef</a>
+                    <a class="btn btn-primary my-1" href="trade.html">Pork</a>
+                    <a class="btn btn-primary my-1" href="trade.html">Chicken</a>
+                    <a class="btn btn-primary my-1" href="trade.html">Eggs</a>
+                </div>
         </div>
       </div>
     </main>
@@ -71,7 +67,7 @@
       <div class="bg-primary container-fluid">
         <div class="row">
           <div class="col d-flex py-3 px-1 text-yellow">
-            <span>&copy Miller's Market</span>
+            <span>&copy; Miller's Market</span>
             <span class="px-3 mx-3">
               <span class="px-1 mx-1"><a href="./index.html" class="text-yellow">ABOUT</a></span>
               <span class="px-1 mx-1"><a href="./index.html" class="text-yellow">CONTACT</a></span>

@@ -1,3 +1,9 @@
 ul {
     list-style-type: none;
 }
+
+.trades-card {
+    box-shadow: 2px 2px 8px 0.5rem rgba(0,0,0,.15);
+    border: 1px solid #000;
+    border-radius: .35rem;
+}

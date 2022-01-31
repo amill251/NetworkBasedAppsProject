@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Trading App Template</title>
+    <title>Miller's Market</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
@@ -13,6 +13,7 @@
       href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./../../resources/styles/modified_bootstrap.css">
+    <link rel="icon" type="image/x-icon" href="./../../resources/drawable/favicon.ico">
   </head>
   <body class="">
     <header>
@@ -24,7 +25,7 @@
                 <a href="./index.html"><img class="clickable" src="./../../resources/drawable/home.svg" alt="home icon"></a>
               </div>
               <div class="col-lg-4 col-12 text-end py-3 px-1 justify-space-between">
-                <a href="./newTrade.html"><button class="btn btn-secondary btn-sm mx-1">Start Trading!</button></a>
+                <a href="./newTrade.html" class="btn btn-secondary btn-sm mx-1">Start Trading!</a>
                 <button class="btn btn-primary btn-sm mx-1">Login</button>
                 <button class="btn btn-primary btn-sm mx-1">Sign up</button>
               </div>
@@ -36,7 +37,7 @@
           <div class="container-fluid">
             <div class="row px-2">
               <div class="col-1 py-2 px-1">
-                <a href="./trades.html"><button class="btn btn-secondary">Trades</button></a>
+                <a href="./trades.html" class="btn btn-secondary">Trades</a>
               </div>
             </div>
           </div>
@@ -46,12 +47,19 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-lg-6 col-md-12">
             <div class="p-5 m-5 h-100">
               <h1>Welcome to <span class="font-raleway-heavy text-primary">Miller's Market!</span></h1>
               <p>Where people go to find, trade, or give away farm animals and livestock.</p>
               <p>Check out our new section on specialty livestock!</p>
             </div>
+          </div>
+          <div class="col-lg-6 col-md-12 d-flex justify-content-center p-5">
+            <img class="w-75"
+            class="cow-img w-100"
+            src="./../../resources/drawable/cow_cartoon.png"
+            alt="cow cartoon"
+          />
           </div>
         </div>
       </div>
@@ -60,7 +68,7 @@
       <div class="bg-primary container-fluid">
         <div class="row">
           <div class="col d-flex py-3 px-1 text-yellow">
-            <span>&copy Miller's Market</span>
+            <span>&copy; Miller's Market</span>
             <span class="px-3 mx-3">
               <span class="px-1 mx-1"><a href="./index.html" class="text-yellow">ABOUT</a></span>
               <span class="px-1 mx-1"><a href="./index.html" class="text-yellow">CONTACT</a></span>
