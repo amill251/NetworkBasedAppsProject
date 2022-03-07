@@ -1,0 +1,44 @@
+<%- include('./partials/header.ejs')%>
+      <div class="container pt-4 pb-3">
+        <div class="card bg-secondary text-yellow">
+          <div class="row px-5 py-3">
+            <div class="col-lg-2 col-md-5 col-sm-12 mb-2">
+              <div>
+                <img
+                  class="cow-img w-100"
+                  src="<%= trade.img %>"
+                  alt="cow"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-12">
+              <div>
+                <h1 class="font-raleway-heavy"><%= trade.title %></h1>
+                <p class="text-white"><%= trade.header %></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 pt-3 mt-3 border-white bd-center">
+              <div class="h-100">
+                <div>
+                  <h5 class="font-raleway-heavy">Interested in this <%= trade.title %>?</h5>
+                </div>
+                <div class="p-3 d-flex justify-content-center">
+                  <a href="/delete/<%= trade.id %> " class="btn btn-primary mx-2"
+                    >Delete It</a
+                  >
+                  <a href="./newUpdate/<%= trade.id %> " class="btn btn-primary mx-2"
+                    >Update It</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row px-5 pb-3">
+            <div class="col-lg-8 col-md-12 pt-3 border-white">
+              <h2 class="font-raleway-heavy">Details</h2>
+              <p class="paragraph text-white"><%= trade.details %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%- include('./partials/footer.ejs')%>

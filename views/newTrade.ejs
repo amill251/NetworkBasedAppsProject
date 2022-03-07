@@ -1,0 +1,77 @@
+<%- include('./partials/header.ejs')%>
+      <div class="container p-3">
+        <form class="card card-secondary p-3" target="_blank" action="new" method="post">
+          <div class="row mb-3">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-9 col-md-12">
+              <h3 class="text-yellow font-raleway-heavy">New Trade</h3>
+            </div>
+          </div>
+          <div class="form-group row mb-3">
+            <div class="col-1"></div>
+            <label class="col-lg-2 col-sm-12 col-form-label" for="inputCategory"
+              >Category</label
+            >
+            <div class="col-lg-8 col-sm-12">
+              <input
+                class="form-control"
+                type="text"
+                name="category"
+                placeholder="Livestock or Raw meat and Eggs"
+                id="inputCategory"
+              />
+            </div>
+          </div>
+          <div class="form-group row mb-3">
+            <div class="col-lg-1 col-md-0"></div>
+            <label class="col-lg-2 col-sm-12 col-form-label" for="inputTitle"
+              >Title</label
+            >
+            <div class="col-lg-8 col-sm-12">
+              <input
+                class="form-control"
+                type="text"
+                name="title"
+                placeholder="Title"
+                id="inputTitle"
+              />
+            </div>
+          </div>
+          <div class="form-group row mb-3">
+            <div class="col-lg-1 col-md-0"></div>
+            <label class="col-lg-2 col-sm-12 col-form-label" for="inputHeader"
+              >Header</label
+            >
+            <div class="col-lg-8 col-sm-12">
+              <input
+                class="form-control"
+                type="text"
+                name="header"
+                placeholder="Header"
+                id="inputHeader"
+              />
+            </div>
+          </div>
+          <div class="form-group row mb-3">
+            <div class="col-lg-1 col-md-0"></div>
+            <label class="col-lg-2 col-sm-12 col-form-label" for="inputDetails"
+              >Details</label
+            >
+            <div class="col-lg-8 col-sm-12">
+              <textarea
+                class="form-control h-120px"
+                name="details"
+                placeholder="Description"
+                id="inputDetails"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-group row mb-3">
+            <div class="col-lg-2 col-md-0"></div>
+            <div class="col-lg-9 col-md-12 d-flex justify-content-end">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <%- include('./partials/footer.ejs')%>
