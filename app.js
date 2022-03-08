@@ -12,9 +12,9 @@ app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
 app.use(morgan('tiny'));
 
-
+app.use(express.static('node_modules'));
 app.use('/', routes);
-app.use(express.static('node_modules'))
+
 
 app.listen(port, host, ()=> {
     console.log('Server is running on port', port);

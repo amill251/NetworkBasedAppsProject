@@ -3,7 +3,6 @@ const controller = require('./../controllers/controller')
 
 const router = express.Router();
 
-
 router.get('/', controller.index);
 
 router.get('/trades', controller.trades);
@@ -19,5 +18,11 @@ router.get('/delete/:id', controller.delete);
 router.get('/newUpdate/:id', controller.newUpdate);
 
 router.post('/update/:id', controller.update);
+
+router.get('/about', controller.about);
+
+router.get('/contact', controller.contact);
+
+router.all('*', controller.error);
 
 module.exports = router;

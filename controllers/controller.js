@@ -11,6 +11,14 @@ exports.trades = (req, res)=>{
 
 exports.trade = (req, res)=>{
     let trade = model.findById(req.params.id)
+    if(trade == null) {
+        let error = {
+            status:404,
+            message:'Not found'
+        };
+        res.status(error.status).render('error', {error})
+        return;
+    }
     res.render('trade', {trade});
 };
 
@@ -19,8 +27,16 @@ exports.newTrade = (req, res)=>{
 };
 
 exports.new = (req, res)=>{
-    model.addTrade(req.body);
+    let response = model.addTrade(req.body);
     let trades = model.find();
+    if(response == -1) {
+        let error = {
+            status:400,
+            message:'Title cannot be empty'
+        };
+        res.status(error.status).render('error', {error})
+        return;
+    }
     res.render('trades', {trades});
 };
 
@@ -38,7 +54,41 @@ exports.newUpdate = (req, res)=>{
 };
 
 exports.update = (req, res)=>{
-    let trade = model.update(req.params.id, req.body)
-    res.render('trade', {trade});
+    console.log('Test')
+    let trades = model.update(req.params.id, req.body)
+    console.log('Test')
+    console.log(trades);
+    if(trades == null) {
+        let error = {
+            status:404,
+            message:'No trade with that ID'
+        };
+        res.status(error.status).render('error', {error})
+        return;
+    }
+    if(trades == -1) {
+        let error = {
+            status:400,
+            message:'Title cannot be empty'
+        };
+        res.status(error.status).render('error', {error})
+        return;
+    }
+    res.render('trades', {trades});
 };
 
+exports.about = (req, res)=> {
+    res.render('about');
+}
+
+exports.contact = (req, res)=> {
+    res.render('contact');
+}
+
+exports.error = (req, res)=> {
+    let error = {
+        status:404,
+        message:'Not found'
+    };
+        res.status(error.status).render('error', {error});
+}

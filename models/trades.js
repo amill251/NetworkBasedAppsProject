@@ -70,6 +70,11 @@ exports.findById = (id) => {
 
 exports.addTrade = (newTrade) => {
     idCount++;
+    console.log(newTrade);
+    if(newTrade.title == null || newTrade.title == '') {
+        return -1;
+    }
+
     trades.push(
         {
             id: idCount,
@@ -80,25 +85,37 @@ exports.addTrade = (newTrade) => {
             img: 'images/cow.jpg'
         }
     );
+    return 0;
 }
 
 exports.update = (id, updatedTrade) => {
     let trade = trades.find((trade) => {
         return trade.id == id;
     });
+    if (trade == null) {
+        return null;
+    }
+
+    if(updatedTrade.title == '') {
+        return -1;
+    }
 
     trade.title = updatedTrade.title;
     trade.category = updatedTrade.category;
     trade.header = updatedTrade.header;
     trade.details = updatedTrade.details;
-    return trade;
+    return trades;
 }
 
 exports.deleteTrade = (id) => {
     let tradeIndex = trades.findIndex((trade) => {
         return trade.id == id;
     });
+    if (tradeIndex == null || tradeIndex < 0) {
+        tradeIndex = -1;
+        return tradeIndex;
+    } 
 
-    if (tradeIndex !== -1) trades.splice(tradeIndex, 1);
+    trades.splice(tradeIndex, 1);
     return trades;
 }

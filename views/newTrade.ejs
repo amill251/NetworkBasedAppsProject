@@ -1,6 +1,6 @@
 <%- include('./partials/header.ejs')%>
       <div class="container p-3">
-        <form class="card card-secondary p-3" target="_blank" action="new" method="post">
+        <form id="trade_form" class="card card-secondary p-3" action="/new" method="post">
           <div class="row mb-3">
             <div class="col-lg-3"></div>
             <div class="col-lg-9 col-md-12">
@@ -9,17 +9,18 @@
           </div>
           <div class="form-group row mb-3">
             <div class="col-1"></div>
-            <label class="col-lg-2 col-sm-12 col-form-label" for="inputCategory"
+            <label class="col-lg-2 col-sm-12 col-form-label" for="category"
               >Category</label
             >
             <div class="col-lg-8 col-sm-12">
-              <input
-                class="form-control"
-                type="text"
+              <select 
+                form="trade_form" 
+                class="form-select" 
                 name="category"
-                placeholder="Livestock or Raw meat and Eggs"
-                id="inputCategory"
-              />
+                id="category">
+                <option value="Livestock">Livestock</option>
+                <option value="Raw meat and Eggs">Raw meat and Eggs</option>
+              </select>
             </div>
           </div>
           <div class="form-group row mb-3">

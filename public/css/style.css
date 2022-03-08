@@ -27,3 +27,66 @@ main {
     font-family: Raleway-Black;
     src: url(./../fonts/raleway.heavy.ttf);
   }
+
+  label {
+    white-space: nowrap;
+}
+
+.h-120px {
+    height: 120px;
+}
+
+.card-secondary {
+    background-color: #0B7596 !important;
+    border: none !important;
+    color: white;
+}
+
+.btn-success, .btn-success:focus {
+    color: #fff !important;
+    border: 1px solid #EB5063 !important;
+    border-radius: 0px !important;
+    background-color: #EB5063 !important;
+}
+
+
+.btn-success:focus {
+    box-shadow: 0px 0px 8px 0.25rem #EB5063 !important;
+}
+
+.btn-success:hover, .btn-success:active {
+    color: #EB5063 !important;
+    background-color: #FFF !important;
+    border-color: #EB5063 !important;
+}
+
+.cow-img-trade {
+    border-radius: .25rem !important;
+    box-shadow: 2px 2px 4px 0.25rem rgba(0,0,0,.15);
+}
+
+.paragraph {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bd-center {
+    display: flex; 
+    flex-direction:column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.border-white {
+    border: 1px solid white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.trades-card {
+    box-shadow: 2px 2px 8px 0.5rem rgba(0,0,0,.15);
+    border: 1px solid #000;
+    border-radius: .35rem;
+}
